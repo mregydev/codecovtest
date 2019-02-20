@@ -1,0 +1,28 @@
+{
+  "name": "codecovtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sumtest.spec.js",
+  "dependencies": {
+    "nyc": "^13.3.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.2.0",
+    "mocha": "^6.0.0"
+  },
+  "scripts": {
+    "testcov": "node_modules/.bin/nyc node_modules/.bin/mocha test/*.spec.js",
+    "codv": "node_modules/.bin/nyc report --reporter=text-lcov>coverage.lcov && node_modules/.bin/codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mregydev/codecovtest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mregydev/codecovtest/issues"
+  },
+  "homepage": "https://github.com/mregydev/codecovtest#readme"
+}
