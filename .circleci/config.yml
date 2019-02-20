@@ -5,7 +5,7 @@
 version: 2
 orbs:
   codecov: codecov/codecov@1.0.3
-
+  
 jobs:
   build:
     docker:
@@ -37,8 +37,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: sudo npm install -g codecov
+      - run: set -e
       # run tests!
-      - run:
-        command: 
-         - set -e
-         - npm run ci
+      - run: npm run ci
