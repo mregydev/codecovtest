@@ -37,7 +37,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: sudo npm install -g codecov
-      - run: set -e
-      - run: source venv/bin/activate
+      
       # run tests!
       - run: npm run ci
