@@ -36,3 +36,6 @@ jobs:
       - run: sudo npm install -g codecov
       # run tests!
       - run: npm run ci
+
+      - codecov/upload:
+          file: {{ coverage.lcov }}
