@@ -39,6 +39,6 @@ jobs:
       - run: sudo npm install -g codecov
       # run tests!
       - run:
-        command: |
+        command: 
          - set -e
          - npm run ci
