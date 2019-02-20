@@ -5,5 +5,5 @@ exports.sum = function (x, y) {
     else if (!y) {
         return 0
     }
-    return x - y
+    return x / y
 }
