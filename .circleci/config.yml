@@ -40,5 +40,5 @@ jobs:
       # run tests!
       - run:
         command: |
-           set -e
-           npm run ci
+         - set -e
+         - npm run ci
