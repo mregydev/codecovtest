@@ -13,7 +13,7 @@
   "scripts": {
     "testcov": "node_modules/.bin/nyc node_modules/.bin/mocha test/*.spec.js",
     "checkCoverage":"node_modules/.bin/nyc check-coverage --statement 90",
-    "codv": "node_modules/.bin/nyc report --reporter=html>coverage.lcov && codecov",
+    "codv": "node_modules/.bin/nyc report --reporter=lcov>coverage.lcov && codecov",
     "ci": "npm run testcov && npm run checkCoverage && npm run codv"
   },
   "repository": {
